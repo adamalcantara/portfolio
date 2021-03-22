@@ -85,7 +85,7 @@ main {
 
 .verticalline {
     border-left: 3px solid #3c4f6a;
-    height: absolute;
+    height: relative;
     margin-left: 10px;
     margin-right: 50px;
 }
@@ -102,15 +102,44 @@ article {
     margin-bottom: 30px;
 }
 
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
 .worktitle {
     font-weight: bold;
     font-size: 50px;
     text-align: right;
 }
 
+.workverticalline {
+    border-left: 3px solid #3c4f6a;
+    height: relative;
+    position: static;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 470px 470px;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
 #surf {
     display: flex;
     border: 8px solid #88c5c7;
+    position: static;
+    width: 970px;
+    margin-left: 50px;
+   
 }
 
 #surf:hover {
@@ -145,13 +174,14 @@ h3 {
     margin-bottom: 10px;
 }
 
-.grid {
-    display: grid;
-}
+
 
 #led {
-    display: ;
+    display: flex;
     border: 8px solid #88c5c7;
+    position: static;
+    width: 100%;
+    
 }
 
 #led:hover {
@@ -161,7 +191,7 @@ h3 {
 
 #led img {
     width: 100%;
-    height: 500px;
+    height: 250px;
     object-fit: cover;
     display: flex;
     opacity: 0.5;
@@ -177,8 +207,106 @@ h3 {
     position: absolute;
     background-color: #88c5c7;
     padding: 10px;
-    margin-top: 375px;
+    margin-top: 125px;
 }
+
+#calculator {
+    display: flex;
+    border: 8px solid #88c5c7;
+    width: 100%
+}
+
+#calculator:hover {
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#calculator img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    opacity: 0.5;
+}
+
+#calculator img:hover {
+    opacity: 1;
+    transition: 0.7s;
+}
+
+
+#calculatortext {
+    position: absolute;
+    background-color: #88c5c7;
+    padding: 10px;
+    margin-top: 125px;
+}
+
+#puzzles {
+    display: flex;
+    border: 8px solid #88c5c7;
+    width: 100%
+}
+
+#puzzles:hover {
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#puzzles img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    opacity: 0.5;
+}
+
+#puzzles img:hover {
+    opacity: 1;
+    transition: 0.7s;
+}
+
+
+#puzzletext {
+    position: absolute;
+    background-color: #88c5c7;
+    padding: 10px;
+    margin-top: 125px;
+}
+
+#run {
+    display: flex;
+    border: 8px solid #88c5c7;
+    width: 100%
+}
+
+#run:hover {
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#run img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    opacity: 0.5;
+}
+
+#run img:hover {
+    opacity: 1;
+    transition: 0.7s;
+}
+
+
+#runtext {
+    position: absolute;
+    background-color: #88c5c7;
+    padding: 10px;
+    margin-top: 125px;
+}
+
+
 
 
 

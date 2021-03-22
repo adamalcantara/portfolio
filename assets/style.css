@@ -75,6 +75,8 @@ main {
 
 .flexcontainer {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .abouttitle {
@@ -95,7 +97,6 @@ p {
 }
 
 article {
-    display: grid;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #3c4f6a;
     max-width: 80%;
@@ -103,22 +104,130 @@ article {
     margin-bottom: 30px;
 }
 
-
 .worktitle {
     font-weight: bold;
     font-size: 50px;
     text-align: right;
 }
 
-.surf {
-    background-color: teal;
+#surf {
+    border: 8px solid #88c5c7;
+    background-image: url(../assets/surfbackgroundimage_2.jpg);
+    background-size: cover;
     width: 100%;
     height: 500px;
 }
 
+#surf:hover {
+    background-image: url(../assets/surfbackgroundimage.jpg);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+
+#surftext {
+    background-color: #88c5c7;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 375px;
+}
+
 h3 {
     font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
+
+#workgrid {
+    display: grid;
+}
+
+#led {
+    border: 8px solid #88c5c7;
+    background-image: url(../assets/ledwall_2.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 250px;
+}
+
+#led:hover {
+    background-image: url(../assets/ledwall.jpg);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#ledtext {
+    background-color: #88c5c7;
+    display: inline-block;
+    padding: 10px;
+}
+
+#calculator {
+    border: 8px solid #88c5c7;
+    background-image: url(../assets/calculatorimage_2.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 250px;
+}
+
+#calculator:hover {
+    background-image: url(../assets/calculatorimage.jpg);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#calculatortext {
+    background-color: #88c5c7;
+    display: inline-block;
+    padding: 10px;
+}
+
+#puzzles {
+    border: 8px solid #88c5c7;
+    background-image: url(../assets/puzzleimage_2.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 250px;
+}
+
+#puzzles:hover {
+    background-image: url(../assets/puzzleimage.jpg);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#puzzletext {
+    background-color: #88c5c7;
+    display: inline-block;
+    padding: 10px;
+}
+
+#run {
+    border: 8px solid #88c5c7;
+    background-image: url(../assets/run_2.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 250px;
+}
+
+#run:hover {
+    background-image: url(../assets/run.jpg);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#runtext {
+    background-color: #88c5c7;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+
+
+
+
+
 
 footer {
     display: grid;
@@ -151,3 +260,4 @@ a {
 a:hover {
     color: #88c5c7;
 }
+

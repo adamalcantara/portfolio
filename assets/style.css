@@ -75,8 +75,6 @@ main {
 
 .flexcontainer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .abouttitle {
@@ -111,23 +109,32 @@ article {
 }
 
 #surf {
+    display: flex;
     border: 8px solid #88c5c7;
-    background-image: url(../assets/surfbackgroundimage_2.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 500px;
 }
 
 #surf:hover {
-    background-image: url(../assets/surfbackgroundimage.jpg);
     transition: 0.7s;
     cursor: pointer;
 }
 
+#surf img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: flex;
+    opacity: 0.5;
+}
+
+#surf img:hover {
+    opacity: 1;
+    transition: 0.7s;
+}
+
 
 #surftext {
+    position: absolute;
     background-color: #88c5c7;
-    display: inline-block;
     padding: 10px;
     margin-top: 375px;
 }
@@ -138,91 +145,40 @@ h3 {
     margin-bottom: 10px;
 }
 
-#workgrid {
+.grid {
     display: grid;
 }
 
 #led {
+    display: ;
     border: 8px solid #88c5c7;
-    background-image: url(../assets/ledwall_2.jpg);
-    background-size: cover;
-    width: 50%;
-    height: 250px;
 }
 
 #led:hover {
-    background-image: url(../assets/ledwall.jpg);
     transition: 0.7s;
     cursor: pointer;
 }
+
+#led img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: flex;
+    opacity: 0.5;
+}
+
+#led img:hover {
+    opacity: 1;
+    transition: 0.7s;
+}
+
 
 #ledtext {
+    position: absolute;
     background-color: #88c5c7;
-    display: inline-block;
     padding: 10px;
+    margin-top: 375px;
 }
-
-#calculator {
-    border: 8px solid #88c5c7;
-    background-image: url(../assets/calculatorimage_2.jpg);
-    background-size: cover;
-    width: 50%;
-    height: 250px;
-}
-
-#calculator:hover {
-    background-image: url(../assets/calculatorimage.jpg);
-    transition: 0.7s;
-    cursor: pointer;
-}
-
-#calculatortext {
-    background-color: #88c5c7;
-    display: inline-block;
-    padding: 10px;
-}
-
-#puzzles {
-    border: 8px solid #88c5c7;
-    background-image: url(../assets/puzzleimage_2.jpg);
-    background-size: cover;
-    width: 50%;
-    height: 250px;
-}
-
-#puzzles:hover {
-    background-image: url(../assets/puzzleimage.jpg);
-    transition: 0.7s;
-    cursor: pointer;
-}
-
-#puzzletext {
-    background-color: #88c5c7;
-    display: inline-block;
-    padding: 10px;
-}
-
-#run {
-    border: 8px solid #88c5c7;
-    background-image: url(../assets/run_2.jpg);
-    background-size: cover;
-    width: 50%;
-    height: 250px;
-}
-
-#run:hover {
-    background-image: url(../assets/run.jpg);
-    transition: 0.7s;
-    cursor: pointer;
-}
-
-#runtext {
-    background-color: #88c5c7;
-    display: inline-block;
-    padding: 10px;
-}
-
-
 
 
 

@@ -81,7 +81,7 @@ main {
     display: flex;
 }
 
-.abouttitle {
+#abouttitle {
     font-weight: bold;
     font-size: 50px;
     text-align: right;
@@ -113,7 +113,7 @@ article {
     
 }
 
-.worktitle {
+#worktitle {
     font-weight: bold;
     font-size: 50px;
     text-align: right;
@@ -323,7 +323,7 @@ footer {
     margin-left: 140px;
 }
 
-.contacttitle {
+#contacttitle {
     font-weight: bold;
     font-size: 50px;
     text-align: right;
@@ -446,7 +446,7 @@ a:hover {
         flex-direction: column;
     }
 
-    .abouttitle {
+    #abouttitle {
         text-align: left;
     }
     
@@ -457,7 +457,7 @@ a:hover {
         margin-right: auto;
     }
 
-    .worktitle {
+    #worktitle {
         text-align: left;
     }
 
@@ -470,6 +470,7 @@ a:hover {
 
     #surf {
         margin-left: 0;
+        margin-top: 10px;
     }
     #surf img {
         height: 250px;
@@ -477,6 +478,7 @@ a:hover {
 
     #surftext {
         margin: 125px;
+        margin-left: 0px;
     }
 
     .container {
@@ -489,7 +491,7 @@ a:hover {
         margin-right: auto;
     }
 
-    .contacttitle {
+    #contacttitle {
         text-align: left;
     }
 

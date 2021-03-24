@@ -1,15 +1,19 @@
-
+:root {
+    --charcoal: #2b2e35;
+    --teal: #88c5c7;
+    --darkblue: #3c4f6a;
+}
 
 header {
-    background-color: #2b2e35;
+    background-color: var(--charcoal);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 h1 {
-    color: #2b2e35;
-    background-color: #88c5c7;
+    color: var(--charcoal);
+    background-color: var(--teal);
     font-size: 45px;
     font-weight: bold;
     display: inline-block;
@@ -34,13 +38,13 @@ li {
 }
 
 .menu {
-    color: #88c5c7;
+    color: var(--teal);
     padding: 10px;
     margin-right: auto;
 }
 
 .menu:hover {
-    color: #2b2e35;
+    color: var(--charcoal);
     background-color: white;
     transition: 0.5s;
 }
@@ -63,15 +67,15 @@ h2 {
     display: inline;
     padding: 10px;
     margin-right: 100px;
-    color: #2b2e35;
-    background-color: #88c5c7;
+    color: var(--charcoal);
+    background-color: var(--teal);
     margin-bottom: 30px;
 }
 
 main {
     display: grid;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #3c4f6a;
+    color: var(--darkblue);
     max-width: 80%;
     margin-left: 200px;
     margin-bottom: 30px;
@@ -88,7 +92,7 @@ main {
 }
 
 .verticalline {
-    border-left: 3px solid #3c4f6a;
+    border-left: 3px solid var(--darkblue);
     height: relative;
     margin-left: 10px;
     margin-right: 50px;
@@ -100,7 +104,7 @@ p {
 
 article {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #3c4f6a;
+    color: var(--darkblue);
     max-width: 80%;
     margin-left: 219px;
     margin-bottom: 30px;
@@ -120,7 +124,7 @@ article {
 }
 
 .workverticalline {
-    border-left: 3px solid #3c4f6a;
+    border-left: 3px solid var(--darkblue);
     height: relative;
     margin-left: 10px;
     margin-right: 50px;
@@ -138,7 +142,7 @@ article {
 
 #surf {
     display: flex;
-    border: 8px solid #88c5c7;
+    border: 8px solid var(--teal);
     width: 100%;
     margin-left: 50px;
    
@@ -165,7 +169,7 @@ article {
 
 #surftext {
     position: absolute;
-    background-color: #88c5c7;
+    background-color: var(--teal);
     padding: 10px;
     margin-top: 375px;
 }
@@ -180,7 +184,7 @@ h3 {
 
 #led {
     display: flex;
-    border: 8px solid #88c5c7;
+    border: 8px solid var(--teal);
     position: static;
     width: 100%;
     
@@ -207,14 +211,14 @@ h3 {
 
 #ledtext {
     position: absolute;
-    background-color: #88c5c7;
+    background-color: var(--teal);
     padding: 10px;
     margin-top: 125px;
 }
 
 #calculator {
     display: flex;
-    border: 8px solid #88c5c7;
+    border: 8px solid var(--teal);
     width: 100%
 }
 
@@ -239,14 +243,14 @@ h3 {
 
 #calculatortext {
     position: absolute;
-    background-color: #88c5c7;
+    background-color: var(--teal);
     padding: 10px;
     margin-top: 125px;
 }
 
 #puzzles {
     display: flex;
-    border: 8px solid #88c5c7;
+    border: 8px solid var(--teal);
     width: 100%
 }
 
@@ -271,14 +275,14 @@ h3 {
 
 #puzzletext {
     position: absolute;
-    background-color: #88c5c7;
+    background-color: var(--teal);
     padding: 10px;
     margin-top: 125px;
 }
 
 #run {
     display: flex;
-    border: 8px solid #88c5c7;
+    border: 8px solid var(--teal);
     width: 100%
 }
 
@@ -303,22 +307,15 @@ h3 {
 
 #runtext {
     position: absolute;
-    background-color: #88c5c7;
+    background-color: var(--teal);
     padding: 10px;
     margin-top: 125px;
 }
 
-
-
-
-
-
-
-
 footer {
     display: grid;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #3c4f6a;
+    color: var(--darkblue);
     max-width: 80%;
     margin-left: 140px;
 }
@@ -337,14 +334,14 @@ footer {
 }
 
 a {
-    color: #3c4f6a;
+    color: var(--darkblue);
     margin-right: 40px;
     font-weight: bold;
     font-size: 30px;
 }
 
 a:hover {
-    color: #88c5c7;
+    color: var(--teal);
 }
 
 @media screen and (max-width: 980px) {
@@ -421,7 +418,7 @@ a:hover {
 
 
     .menu {
-        font-size: 22px;
+        font-size: 20px;
         padding: 0;
     }
 
@@ -437,7 +434,7 @@ a:hover {
 
     .verticalline {
         border-left: none;
-        border-top: 3px solid #3c4f6a;
+        border-top: 3px solid var(--darkblue);
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -463,7 +460,7 @@ a:hover {
 
     .workverticalline {
         border-left: none;
-        border-top: 3px solid #3c4f6a;
+        border-top: 3px solid var(--darkblue);
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -493,6 +490,10 @@ a:hover {
 
     #contacttitle {
         text-align: left;
+    }
+
+    .contact a {
+        font-size: 20px;
     }
 
 }
